@@ -1,0 +1,228 @@
+/*
+* Design & code by Toon Claes
+*
+* Silk         icons from: http://www.famfamfam.com/lab/icons/silk/
+* Social Media icons from: http://paulrobertlloyd.com/2009/06/social_media_icons
+* Conditional CSS    from: http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+*/
+
+/*+++ General styles +++*/
+* {
+    font-family: "Lucida Grande",Verdana,sans-serif;
+}   
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #333333;
+}
+h1, h2, h3, p {
+    margin: 10px;
+}
+h1, h2, h3 {
+    text-shadow: 0 1px 0 #ffffff;
+}
+li {
+    list-style: none;
+}
+li ins {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: #075da3;
+}
+p a:hover {
+    border-bottom: 1px dashed #075da3;
+}
+em {
+    font-style: normal;
+}
+span {
+    position: relative;
+    background: url("img/dropbottom.png") repeat-x bottom center;
+    z-index: 10;
+    display: block;
+    margin: -10px 0 0 0;
+}
+/*--- General styles ---*/
+
+/*+++ IE styles +++*/
+.ie6 span {
+    display: none !important;
+}
+.ie6 #about {
+    padding-bottom: 5px;
+}
+/*--- IE styles ---*/
+
+/*+++ Shared styles +++*/
+#main, #about, #contact, #social, #footer {
+    padding: 5px 0 0 0;
+    margin: 0;
+}
+/*--- Shared styles ---*/
+
+/*+++ Bottom +++*/
+#top {
+    background: #333333 url("img/gradient-3u.png") repeat-x bottom;
+    height: 20px;
+}
+/*--- Bottom ---*/
+
+/*+++ Main +++*/
+#main {
+    background: #cccccc url("img/gradient-c.png") repeat-x;
+}
+/*--- Main ---*/
+
+/*+++ Bio +++*/
+#about {
+    position: relative;
+    background: #cccccc url("img/gradient-c.png") repeat-x;
+}
+/*--- Bio ---*/
+
+/*+++ Contact +++*/
+#contact {
+    background: #cccccc url("img/gradient-c.png") repeat-x;
+}
+#contact ul {
+    padding-left: 48px;
+}
+#contact li em {
+    padding-left: 30px;
+}
+.address em {
+    background: url("img/house.png") no-repeat;
+}
+.web em {
+    background: url("img/world.png") no-repeat;
+}
+.email em {
+    background: url("img/email.png") no-repeat;
+}
+.msn em {
+    background: url("img/status_online.png") no-repeat;
+}
+.resume em {
+    background: url("img/report_user.png") no-repeat;
+}
+.bday em {
+    background: url("img/cake.png") no-repeat;
+}
+/*--- Contact ---*/
+
+/*+++ Social +++*/
+#social {
+    background: #cccccc url("img/gradient-c.png") repeat-x;
+    padding: 0;
+}
+#social ul {
+    margin: 0;
+    padding: 0;
+}
+#social li, .title {
+}
+#social a, .title a {
+    height: 35px;
+    color: #eeeeee;
+    overflow: hidden;
+    display: block;
+    margin: 0 1px;
+}
+#social em {
+    margin: 15px 15px 15px 73px;
+    z-index: 1;
+}
+#social strong {
+    color: #ffffff;
+    display: block;
+    padding-left: 58px;
+    height: 48px;
+    margin: 15px 0 -25px 15px;
+    z-index: 1;
+    text-shadow: 0 1px 0 #333333;
+}
+#social span {
+    height: 100%;
+    margin-top: -56px;
+}
+#social ul:hover {
+    margin-top: -43px;
+}
+#social a:hover, #social a.test {
+    height: 78px;
+}
+.title {
+    height: 78px;
+    margin: 0;
+    padding: 10px 15px 0;
+}
+.twitter {
+    background: #33cbff url("img/gradient-bg.png") repeat-x 0 0px;
+}
+.twitter strong {
+    background: url("img/twitter-48x48.png") no-repeat;
+}
+.facebook {
+    background: #385d92 url("img/gradient-bg.png") repeat-x 0 -78px;
+}
+.facebook strong {
+    background: url("img/facebook-48x48.png") no-repeat;
+}
+.linkedin {
+    background: #3299ce url("img/gradient-bg.png") repeat-x 0 -156px;
+}
+.linkedin strong {
+    background: url("img/linkedin-48x48.png") no-repeat;
+}
+.delicious {
+    background: #3076cc url("img/gradient-bg.png") repeat-x 0 -234px;
+}
+.delicious strong {
+    background: url("img/delicious-48x48.png") no-repeat;
+}
+.youtube {
+    background: #ee1516 url("img/gradient-bg.png") repeat-x 0 -312px;
+}
+.youtube strong {
+    background: url("img/youtube-48x48.png") no-repeat;
+}
+.flickr {
+    background: #ff0086 url("img/gradient-bg.png") repeat-x 0 -390px;
+}
+.flickr strong {
+    background: url("img/flickr-48x48.png") no-repeat;
+}
+.reader {
+    background: #2c2c28 url("img/gradient-bg.png") repeat-x 0 -468px;
+}
+.reader strong {
+    background: url("img/readernaut-48x48.png") no-repeat;
+}
+/*--- Social ---*/
+
+
+/*+++ Footer +++*/
+#footer {
+    background: #cccccc url("img/gradient-c.png") repeat-x;
+    color: #666666;
+    text-align: right;
+    font-size: 0.7em;
+    padding: 0;
+}
+#footer p {
+    padding: 5px 10px;
+    margin: 0;
+    vertical-align: middle;
+    background: url("img/dropbottom.png") repeat-x bottom center;
+}
+/*--- Footer ---*/
+
+
+/*+++ Bottom +++*/
+#bottom {
+    background: #333333 url("img/gradient-3.png") repeat-x;
+    height: 20px;
+}
+/*--- Bottom ---*/
