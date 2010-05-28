@@ -1,228 +1,432 @@
-/*
-* Design & code by Toon Claes
-*
-* Silk         icons from: http://www.famfamfam.com/lab/icons/silk/
-* Social Media icons from: http://paulrobertlloyd.com/2009/06/social_media_icons
-* Conditional CSS    from: http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
-*/
+/**************************
+* General styles
+*************************/
+/* Reset values */
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	outline: none;
+	font-size: 100%;
+	background: transparent;
+	border: none;
+	text-decoration: none;
+}
+/* Body */
+body {
+	line-height: 24px;
+	font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+	color: #333;
+	background: #E8E8CA;
+}
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-weight: normal;
+	margin: 0 0 21px 0;
+}
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+	font-size: 1.3em;
+}
+h3 {
+	font-size: 1.15em;;
+}
+h4 {
+	font-size: 1.0em;
+}
+h5 {
+	font-size: 0.85em;
+}
+h6 {
+	font-size: 0.70em;
+}
+/* Paragraphs */
+p {
+	margin: 0 0 21px 0;
+}
+/* Lists */
+ul {
+	list-style: square;
+	margin: 0 0 21px 2.5em;
+}
+ol {
+	list-style-type: decimal;
+	margin: 0 0 21px 3em;
+}
+ol ol {
+	list-style: upper-roman;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+dl {
+	margin: 0 0 18px 3px;
+}
+dl dt {
+	font-weight: bold;
+	margin: 12px 0 0 0;
+}
+dl dd {
+	margin: 6px 0 0 1.5em;
+}
+/* Text elements */
+strong {
+	font-weight: bold;
+}
+strong strong {
+	font-weight: normal;
+}
+em, cite {
+	font-style: italic;
+}
+em em, cite cite {
+	font-style: normal;
+}
+abbr {
+	cursor: help;
+}
+acronym {
+	text-transform: uppercase;
+	border-bottom: 1px dashed #666;
+	cursor: help;
+}
+big {
+	font-size: 120%;
+}
+small, sup, sub {
+	font-size: 80%;
+}
+sup {
+	vertical-align: baseline;
+	position: relative;
+	bottom: 0.3em;
+}
+sub {
+	vertical-align: baseline;
+	position: relative;
+	top: 0.3em;
+}
+address {
+	font-style: italic;
+	margin: 0 0 21px 0;
+}
+li address, dd address {
+	margin: 0;
+}
+/* Blockquotes */
+blockquote {
+	background: #f1f1Df;
+	border-left: 3px solid #999999;
+	margin: 0 1.5em 1.5em 1.5em;
+	padding: 0.2em 1em;
+	font-style: normal;
+}
+blockquote em, blockquote cite {
+	font-style: italic;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+}
+blockquote p {
+	margin-bottom: 5px;
+}
+/* Links */
+a img {
+	border: none;
+}
+h1 a, h1 a:link, h1 a:active, h1 a:visited  {
+	color: #751816;
+}
+h1 a:hover, h1 span {
+	color: #B25756;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color:#D45755;
+	text-decoration: underline;
+}
+a, a:link, a:visited {
+	color:#2D8BCF;
+	text-decoration: none;
+}
+/* Code */
+pre, code {
+	font: .85em Monaco, monospace, Courier, "Courier New";
+}
+pre code {
+	background: inherit;
+	font-size: 1em;
+}
+pre {
+	background-color: #f9f9f9;
+	border: 1px solid #999999;
+	line-height: 21px;
+	margin-bottom: 21px;
+	overflow: auto;
+	padding: 9px;
+}
+code {
+	background: #EEEEEE none repeat scroll 0 0;
+	padding:0 3px;
+}
+/* Delete and insert */
+ins, dfn {
+	font-style: italic;
+	text-decoration: none;
+	border-bottom: 1px solid #666;
+}
+del {
+	text-decoration: line-through;
+}
+/* Object */
+object {
+	margin-bottom: 21px;
+}
+/* Forms */
+input, textarea {
+	font-size: 1em;
+	font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+	padding: 3px;
+}
+:focus {
+	outline: none;
+}
+form label {
+	cursor: pointer;
+}
+option {
+	padding: 1px 3px;
+}
+/* Tables */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-bottom: 21px;
+}
+th, td {
+	text-align: left;
+}
+/* Horizontal rule */
+hr {
+	margin-bottom: 21px;
+}
+/* Major container */
+#container {
+	overflow: hidden;
+	width: 960px;
+	margin: 0 auto;
+}
+h2, h3, h4, h5, h6 {
+	color: #B25756;
+	font-weight: bold;
+}
 
-/*+++ General styles +++*/
-* {
-    font-family: "Lucida Grande",Verdana,sans-serif;
-}   
-html, body {
-    margin: 0;
-    padding: 0;
-    background: #333333;
+/**************************
+* Header
+*************************/
+#header {
+	left: 0;
+	min-width: 960px;
+	overflow: hidden;
+	position: absolute;
+	top: 40px;
+	white-space: nowrap;
+	width: 100%;
 }
-h1, h2, h3, p {
-    margin: 10px;
+/* Dasher title */
+#dasher {
+	display: block;
+	margin: 20px auto 40px;
+	overflow: visible;
+	position: relative;
+	width: 960px;
 }
-h1, h2, h3 {
-    text-shadow: 0 1px 0 #ffffff;
-}
-li {
-    list-style: none;
-}
-li ins {
-    display: none;
-}
-a {
-    text-decoration: none;
-    color: #075da3;
-}
-p a:hover {
-    border-bottom: 1px dashed #075da3;
-}
-em {
-    font-style: normal;
-}
-span {
-    position: relative;
-    background: url("img/dropbottom.png") repeat-x bottom center;
-    z-index: 10;
-    display: block;
-    margin: -10px 0 0 0;
-}
-/*--- General styles ---*/
 
-/*+++ IE styles +++*/
-.ie6 span {
-    display: none !important;
+#dasher h1, #dasher h2 {
+	margin: 0;
+	position: relative;
 }
-.ie6 #about {
-    padding-bottom: 5px;
+#dasher h1 {
+	color: #B25756;
+	font: normal normal normal 70px/45px monospace;
+	z-index: 5;
 }
-/*--- IE styles ---*/
+#dasher .title {
+	margin-bottom: -45px;
+}
+#dasher a {
+	background: #E8E8CA;
+}
+#dasher .pre {
+	margin: 0 0 -45px -9999px;
+	overflow: hidden;
+	text-align: right;
+	width: 9999px;
+}
+#dasher .post {
+	z-index: 4;
+}
+#dasher h2 {
+	color: #666666;
+	font: normal normal normal 16px/20px Georgia, Times, "Times New Roman", serif;
+	z-index: 6;
+}
 
-/*+++ Shared styles +++*/
-#main, #about, #contact, #social, #footer {
-    padding: 5px 0 0 0;
-    margin: 0;
+/**************************
+* Content
+*************************/
+#content {
+	float: left;
+	margin: 200px 0 0 1px;
+	width: 580px;
 }
-/*--- Shared styles ---*/
+#content h1 {
+	margin-bottom: 5px;
+	font-style: italic;
+}
+.postdate {
+	color: #666666;
+	font-style: italic;
+}
 
-/*+++ Bottom +++*/
-#top {
-    background: #333333 url("img/gradient-3u.png") repeat-x bottom;
-    height: 20px;
+/**************************
+* Page navigation
+*************************/
+#nav {
+	list-style: none;
+	position: relative;
+	text-align: center;
+	margin: 20px 0;
 }
-/*--- Bottom ---*/
+#nav a {
+	position: absolute;
+	top: 0;
+	width: 100px;
+}
+#nav .prev a {
+	right: 0;
+	text-align: right;
+}
+#nav .next a {
+	left: 0;
+	text-align: left;
+}
+#nav .hide {
+	display: none;
+}
 
-/*+++ Main +++*/
-#main {
-    background: #cccccc url("img/gradient-c.png") repeat-x;
+/**************************
+* Sidebar
+*************************/
+#side {
+	float: right;
+	margin-top: 200px;
+	width: 300px;
 }
-/*--- Main ---*/
+#side h1, form {
+	margin: 20px;
+}
+#side input {
+	width: 240px;
+}
+#side h1 {
+	color: #B25756;
+	font-style: italic;
+	font-size: 1.15em;
+}
+#side ul {
+	color: #B25756;
+}
+#side a {
+	color: #751816;
+}
+#side a:hover {
+	text-decoration: underline;
+}
+#side .box {
+	margin-bottom: 20px;
+	border: 3px dashed #f1f1Df;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
 
-/*+++ Bio +++*/
-#about {
-    position: relative;
-    background: #cccccc url("img/gradient-c.png") repeat-x;
-}
-/*--- Bio ---*/
-
-/*+++ Contact +++*/
-#contact {
-    background: #cccccc url("img/gradient-c.png") repeat-x;
-}
-#contact ul {
-    padding-left: 48px;
-}
-#contact li em {
-    padding-left: 30px;
-}
-.address em {
-    background: url("img/house.png") no-repeat;
-}
-.web em {
-    background: url("img/world.png") no-repeat;
-}
-.email em {
-    background: url("img/email.png") no-repeat;
-}
-.msn em {
-    background: url("img/status_online.png") no-repeat;
-}
-.resume em {
-    background: url("img/report_user.png") no-repeat;
-}
-.bday em {
-    background: url("img/cake.png") no-repeat;
-}
-/*--- Contact ---*/
-
-/*+++ Social +++*/
-#social {
-    background: #cccccc url("img/gradient-c.png") repeat-x;
-    padding: 0;
-}
-#social ul {
-    margin: 0;
-    padding: 0;
-}
-#social li, .title {
-}
-#social a, .title a {
-    height: 35px;
-    color: #eeeeee;
-    overflow: hidden;
-    display: block;
-    margin: 0 1px;
-}
-#social em {
-    margin: 15px 15px 15px 73px;
-    z-index: 1;
-}
-#social strong {
-    color: #ffffff;
-    display: block;
-    padding-left: 58px;
-    height: 48px;
-    margin: 15px 0 -25px 15px;
-    z-index: 1;
-    text-shadow: 0 1px 0 #333333;
-}
-#social span {
-    height: 100%;
-    margin-top: -56px;
-}
-#social ul:hover {
-    margin-top: -43px;
-}
-#social a:hover, #social a.test {
-    height: 78px;
-}
-.title {
-    height: 78px;
-    margin: 0;
-    padding: 10px 15px 0;
-}
-.twitter {
-    background: #33cbff url("img/gradient-bg.png") repeat-x 0 0px;
-}
-.twitter strong {
-    background: url("img/twitter-48x48.png") no-repeat;
-}
-.facebook {
-    background: #385d92 url("img/gradient-bg.png") repeat-x 0 -78px;
-}
-.facebook strong {
-    background: url("img/facebook-48x48.png") no-repeat;
-}
-.linkedin {
-    background: #3299ce url("img/gradient-bg.png") repeat-x 0 -156px;
-}
-.linkedin strong {
-    background: url("img/linkedin-48x48.png") no-repeat;
-}
-.delicious {
-    background: #3076cc url("img/gradient-bg.png") repeat-x 0 -234px;
-}
-.delicious strong {
-    background: url("img/delicious-48x48.png") no-repeat;
-}
-.youtube {
-    background: #ee1516 url("img/gradient-bg.png") repeat-x 0 -312px;
-}
-.youtube strong {
-    background: url("img/youtube-48x48.png") no-repeat;
-}
-.flickr {
-    background: #ff0086 url("img/gradient-bg.png") repeat-x 0 -390px;
-}
-.flickr strong {
-    background: url("img/flickr-48x48.png") no-repeat;
-}
-.reader {
-    background: #2c2c28 url("img/gradient-bg.png") repeat-x 0 -468px;
-}
-.reader strong {
-    background: url("img/readernaut-48x48.png") no-repeat;
-}
-/*--- Social ---*/
-
-
-/*+++ Footer +++*/
-#footer {
-    background: #cccccc url("img/gradient-c.png") repeat-x;
-    color: #666666;
-    text-align: right;
-    font-size: 0.7em;
-    padding: 0;
-}
-#footer p {
-    padding: 5px 10px;
-    margin: 0;
-    vertical-align: middle;
-    background: url("img/dropbottom.png") repeat-x bottom center;
-}
-/*--- Footer ---*/
-
-
-/*+++ Bottom +++*/
-#bottom {
-    background: #333333 url("img/gradient-3.png") repeat-x;
-    height: 20px;
-}
-/*--- Bottom ---*/
+/**************************
+* Pygments highlighting
+*************************/
+.hll { background-color: #ffffcc }
+.c { color: #408080; font-style: italic } /* Comment */
+.err { border: 1px solid #FF0000 } /* Error */
+.k { color: #008000; font-weight: bold } /* Keyword */
+.o { color: #666666 } /* Operator */
+.cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.cp { color: #BC7A00 } /* Comment.Preproc */
+.c1 { color: #408080; font-style: italic } /* Comment.Single */
+.cs { color: #408080; font-style: italic } /* Comment.Special */
+.gd { color: #A00000 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #FF0000 } /* Generic.Error */
+.gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.gi { color: #00A000 } /* Generic.Inserted */
+.go { color: #808080 } /* Generic.Output */
+.gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.gt { color: #0040D0 } /* Generic.Traceback */
+.kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #008000 } /* Keyword.Pseudo */
+.kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #B00040 } /* Keyword.Type */
+.m { color: #666666 } /* Literal.Number */
+.s { color: #BA2121 } /* Literal.String */
+.na { color: #7D9029 } /* Name.Attribute */
+.nb { color: #008000 } /* Name.Builtin */
+.nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.no { color: #880000 } /* Name.Constant */
+.nd { color: #AA22FF } /* Name.Decorator */
+.ni { color: #999999; font-weight: bold } /* Name.Entity */
+.ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.nf { color: #0000FF } /* Name.Function */
+.nl { color: #A0A000 } /* Name.Label */
+.nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.nt { color: #008000; font-weight: bold } /* Name.Tag */
+.nv { color: #19177C } /* Name.Variable */
+.ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #666666 } /* Literal.Number.Float */
+.mh { color: #666666 } /* Literal.Number.Hex */
+.mi { color: #666666 } /* Literal.Number.Integer */
+.mo { color: #666666 } /* Literal.Number.Oct */
+.sb { color: #BA2121 } /* Literal.String.Backtick */
+.sc { color: #BA2121 } /* Literal.String.Char */
+.sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.s2 { color: #BA2121 } /* Literal.String.Double */
+.se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.sh { color: #BA2121 } /* Literal.String.Heredoc */
+.si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.sx { color: #008000 } /* Literal.String.Other */
+.sr { color: #BB6688 } /* Literal.String.Regex */
+.s1 { color: #BA2121 } /* Literal.String.Single */
+.ss { color: #19177C } /* Literal.String.Symbol */
+.bp { color: #008000 } /* Name.Builtin.Pseudo */
+.vc { color: #19177C } /* Name.Variable.Class */
+.vg { color: #19177C } /* Name.Variable.Global */
+.vi { color: #19177C } /* Name.Variable.Instance */
+.il { color: #666666 } /* Literal.Number.Integer.Long */
