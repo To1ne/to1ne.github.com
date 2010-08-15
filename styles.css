@@ -227,9 +227,6 @@ hr {
 }
 /* Major container */
 #container {
-	overflow: hidden;
-	width: 960px;
-	margin: 0 auto;
 }
 h2, h3, h4, h5, h6 {
 	color: #B25756;
@@ -239,32 +236,19 @@ h2, h3, h4, h5, h6 {
 /**************************
 * Header
 *************************/
-#header {
-	left: 0;
-	min-width: 960px;
-	overflow: hidden;
-	position: absolute;
-	top: 40px;
-	white-space: nowrap;
-	width: 100%;
-}
 /* Dasher title */
-#dasher {
+#headline {
 	display: block;
-	margin: 20px auto 40px;
-	overflow: visible;
-	position: relative;
-	width: 960px;
+	position: absolute;
+   width: auto;
+   white-space: nowrap;
 }
-
-#dasher h1, #dasher h2 {
-	margin: 0;
-	position: relative;
-}
-#dasher h1 {
+#headline h1 {
 	color: #B25756;
+	margin: 0;
+	position: absolute;
+   top: 0;
 	font: normal normal normal 70px/45px monospace;
-	z-index: 5;
 }
 #dasher .title {
 	margin-bottom: -45px;
@@ -272,11 +256,7 @@ h2, h3, h4, h5, h6 {
 #dasher a {
 	background: #E8E8CA;
 }
-#dasher .pre {
-	margin: 0 0 -45px -9999px;
-	overflow: hidden;
-	text-align: right;
-	width: 9999px;
+#headline .pre {
 }
 #dasher .post {
 	z-index: 4;
