@@ -14,9 +14,9 @@
   MAIN
 \*------------------------------------*/
 html{
+    background:#1f3014;
+    color:#d4d8d2;
     font-family: "Lucida Grande",Verdana,sans-serif;
-    background:#d4d8d2;
-    color:#1f3014;
 /*
     color:#e4eef6;
     background:#4a8ec2;
@@ -25,9 +25,7 @@ html{
 */
 }
 body{
-    background:none;
     padding-top:50px;
-    text-shadow:0 -1px 0 rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.25);
 }
 #page{
     margin:0 auto;
@@ -35,8 +33,14 @@ body{
     text-align:center;
 }
 
+h1{
+    text-shadow:0 -1px 0 rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.25);
+}
 
 
+header{
+    background:white;
+}
 
 
 /*------------------------------------*\
@@ -49,7 +53,7 @@ h1{
 }
 a{
     color:inherit;
-n}
+}
 
 address{
 /*    font-family:"Georgia", "Times New Roman", serif; */
