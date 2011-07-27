@@ -2,7 +2,7 @@
   COLORS
 \*------------------------------------*/
 /*
-  bar:         #8cd959
+  bar:         #8cd959;
   text:        #4da626;
   qoute:       #595959;
   
@@ -40,6 +40,9 @@ h1{
 
 header{
     background:white;
+    width:100%;
+    top:0;
+    display:block;
 }
 
 
@@ -47,6 +50,7 @@ header{
   TYPE
 \*------------------------------------*/
 h1{
+    color:#ffffff;
     font-weight:bold;
     font-size:3em;
     line-height:1;
@@ -68,6 +72,22 @@ blockquote{
 address,h2,h3{
     color:#4da626;
 }
+
+
+::-moz-selection{
+    background:#8cd959;
+    color:#ffffff;
+    text-shadow:none;
+}
+::selection{
+    background:#8cd959;
+    color:#ffffff;
+    text-shadow:none;
+} 
+a:link{
+    -webkit-tap-highlight-color:#8cd959;
+}
+
 
 
 
