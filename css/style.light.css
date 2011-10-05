@@ -2,7 +2,7 @@
   COLORS
 \*------------------------------------*/
 /*
-  bar:         #8cd959
+  bar:         #8cd959;
   text:        #4da626;
   qoute:       #595959;
   
@@ -14,9 +14,9 @@
   MAIN
 \*------------------------------------*/
 html{
-    font-family: "Lucida Grande",Verdana,sans-serif;
     background:#d4d8d2;
     color:#1f3014;
+    font-family: "Lucida Grande",Verdana,sans-serif;
 /*
     color:#e4eef6;
     background:#4a8ec2;
@@ -25,9 +25,7 @@ html{
 */
 }
 body{
-    background:none;
     padding-top:50px;
-    text-shadow:0 -1px 0 rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.25);
 }
 #page{
     margin:0 auto;
@@ -35,8 +33,16 @@ body{
     text-align:center;
 }
 
+h1{
+    text-shadow:0 -1px 0 rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.25);
+}
 
 
+header{
+    width:100%;
+    top:0;
+    display:block;
+}
 
 
 /*------------------------------------*\
@@ -47,13 +53,43 @@ h1{
     font-size:3em;
     line-height:1;
 }
-a{
+a, a:visited{
     color:inherit;
-n}
+    opacity:1; /* override inuit.css */
+}
 
 address{
 /*    font-family:"Georgia", "Times New Roman", serif; */
     font-style:italic;
+}
+
+address span {
+    clear:right;
+    float:right;
+    padding-left:20px;
+    text-align:right;
+}
+
+span.address {
+    background:url("../img/house.png") no-repeat left;
+}
+span.mobile {
+    background:url("../img/phone.png") no-repeat left;
+}
+span.email {
+    background:url("../img/email.png") no-repeat left;
+}
+span.web {
+    background:url("../img/world.png") no-repeat left;
+}
+span.msn {
+    background:url("../img/status_online.png") no-repeat left;
+}
+span.resume {
+    background:url("../img/report_user.png") no-repeat left;
+}
+span.bday {
+    background:url("../img/cake.png") no-repeat left;
 }
 
 blockquote{
@@ -63,6 +99,20 @@ blockquote{
 
 address,h2,h3{
     color:#4da626;
+}
+
+::-moz-selection{
+    background:#8cd959;
+    color:#ffffff;
+    text-shadow:none;
+}
+::selection{
+    background:#8cd959;
+    color:#ffffff;
+    text-shadow:none;
+} 
+a:link{
+    -webkit-tap-highlight-color:#8cd959;
 }
 
 
@@ -90,7 +140,7 @@ address,h2,h3{
 
 
 
-@media (min-width: 721px) and (max-width: 960px){}
+@media (min-width:721px) and (max-width:960px){}
 /*--- END NARROW ---*/
 
 
@@ -109,7 +159,7 @@ address,h2,h3{
 
 
 
-@media (max-width: 720px){
+@media (max-width:720px){
     body{
 	font-size:0.75em;
     }
