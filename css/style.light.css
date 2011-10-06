@@ -6,7 +6,7 @@
   text:        #4da626;
   qoute:       #595959;
   
-  background:  #d4d8d2;
+  background:  #d4d8d2 --> #eef0ee;
   headers:     #1f3014;
 */
 
@@ -14,40 +14,52 @@
   MAIN
 \*------------------------------------*/
 html{
-    background:#d4d8d2;
     color:#1f3014;
     font-family: "Lucida Grande",Verdana,sans-serif;
-/*
-    color:#e4eef6;
-    background:#4a8ec2;
-    background:-moz-linear-gradient(-90deg,#5998c7,#4a8ec2) fixed;
-    background:-webkit-gradient(linear,left top,left bottom,from(#5998c7),to(#4a8ec2)) fixed;
-*/
-}
-body{
-    padding-top:50px;
-}
-#page{
-    margin:0 auto;
-    float:none;
-    text-align:center;
+    min-height:100%;
+
+    background: #d4d8d2; /* Old browsers */
+    background: -moz-linear-gradient(top, #d4d8d2 0%, #eef0ee 66%);                                                      /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4d8d2), color-stop(66%,#eef0ee));        /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #d4d8d2 0%,#eef0ee 66%);                                                    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #d4d8d2 0%,#eef0ee 66%);                                                         /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #d4d8d2 0%,#eef0ee 66%);                                                        /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d8d2', endColorstr='#eef0ee',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #d4d8d2 0%,#eef0ee 66%);                                                            /* W3C */
 }
 
 h1{
+    /* TODO tune shade
     text-shadow:0 -1px 0 rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.25);
+    */
 }
-
 
 header{
-    width:100%;
-    top:0;
-    display:block;
+    margin-top:40px !important;
 }
 
+header blockquote{
+    margin-top:80px;
+}
 
-/*------------------------------------*\
-  TYPE
-\*------------------------------------*/
+nav{
+    margin-top:10px
+}
+
+nav ul{
+    text-align:center;
+}
+
+nav ul a{
+    border-bottom:1px solid #8cd959;
+    display:block;
+    width:100%;
+}
+nav ul a:hover{
+    border:none;
+    text-decoration:none;
+}
+
 h1{
     font-weight:bold;
     font-size:3em;
@@ -59,7 +71,7 @@ a, a:visited{
 }
 
 address{
-/*    font-family:"Georgia", "Times New Roman", serif; */
+    font-family:"Georgia", "Times New Roman", serif;
     font-style:italic;
 }
 
@@ -95,12 +107,49 @@ span.bday {
 blockquote{
     color:#595959;
     font-style:italic;
+    text-indent:0;
 }
 
 address,h2,h3{
     color:#4da626;
 }
 
+article{
+    margin-top:20px
+}
+
+section{
+    margin-left:12%;
+}
+
+section h2 span{
+    border-bottom:8px solid #8cd959;
+    width:10%;
+    height:1em;
+    float:left;
+    margin:-11px 5px 0 -12%;
+    padding:0;
+    display:block;
+}
+
+abbr{
+    border-bottom:1px dotted;
+}
+
+section li{
+    height:50px;
+    list-style-type:none;
+    padding-left:50px;
+}
+
+section li a{
+    margin: auto;
+}
+
+
+/*------------------------------------*\
+  DETAILS
+\*------------------------------------*/
 ::-moz-selection{
     background:#8cd959;
     color:#ffffff;
@@ -118,12 +167,37 @@ a:link{
 
 
 
+
+
 /*------------------------------------*\
   IMAGES
 \*------------------------------------*/
 #logo{
     margin-bottom:1.5em;
 }
+
+.twitter {
+    background: url("../img/twitter-48x48.png") no-repeat;
+}
+.facebook {
+    background: url("../img/facebook-48x48.png") no-repeat;
+}
+.linkedin {
+    background: url("../img/linkedin-48x48.png") no-repeat;
+}
+.delicious {
+    background: url("../img/delicious-48x48.png") no-repeat;
+}
+.youtube {
+    background: url("../img/youtube-48x48.png") no-repeat;
+}
+.flickr {
+    background: url("../img/flickr-48x48.png") no-repeat;
+}
+.readernaut {
+    background: url("../img/readernaut-48x48.png") no-repeat;
+}
+
 
 
 
@@ -162,6 +236,12 @@ a:link{
 @media (max-width:720px){
     body{
 	font-size:0.75em;
+    }
+    header h1{
+        margin-bottom:0.25em;
+    }
+    header blockquote{
+        margin-top:0px;
     }
 }
 /*--- END MOBILE ---*/
