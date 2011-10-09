@@ -1,0 +1,266 @@
+/*------------------------------------*\
+  COLORS
+\*------------------------------------*/
+/*
+  bar:         #8cd959;
+  text:        #4da626;
+  qoute:       #595959;
+  
+  background:  #d4d8d2 --> #eef0ee;
+  headers:     #1f3014;
+*/
+
+/*------------------------------------*\
+  MAIN
+\*------------------------------------*/
+html{
+    color:#1f3014;
+    font-family: "Lucida Grande",Verdana,sans-serif;
+    min-height:100%;
+
+    background: #d4d8d2; /* Old browsers */
+    background: -moz-linear-gradient(top, #d4d8d2 0%, #eef0ee 66%);                                                      /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4d8d2), color-stop(66%,#eef0ee));        /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #d4d8d2 0%,#eef0ee 66%);                                                    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #d4d8d2 0%,#eef0ee 66%);                                                         /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #d4d8d2 0%,#eef0ee 66%);                                                        /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d8d2', endColorstr='#eef0ee',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #d4d8d2 0%,#eef0ee 66%);                                                            /* W3C */
+}
+
+h1{
+    /* TODO tune shade
+    text-shadow:0 -1px 0 rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.25);
+    */
+}
+
+header{
+    margin-top:40px !important;
+}
+
+header blockquote{
+    margin-top:80px;
+}
+
+nav{
+    display:none; /* navigation here is overdone and I don't know how to make it look beautiful */
+    margin-top:10px
+}
+
+nav ul{
+    text-align:center;
+}
+
+nav ul a{
+    border-bottom:1px solid #8cd959;
+    display:block;
+    width:100%;
+}
+nav ul a:hover{
+    border:none;
+    text-decoration:none;
+}
+
+h1{
+    font-weight:bold;
+    font-size:3em;
+    line-height:1;
+}
+a, a:visited{
+    color:inherit;
+    opacity:1; /* override inuit.css */
+}
+
+address{
+    font-family:"Georgia", "Times New Roman", serif;
+    font-style:italic;
+}
+
+address span {
+    clear:right;
+    float:right;
+    padding-left:20px;
+    text-align:right;
+}
+
+span.address {
+    background:url("../img/house.png") no-repeat left;
+}
+span.mobile {
+    background:url("../img/phone.png") no-repeat left;
+}
+span.email {
+    background:url("../img/email.png") no-repeat left;
+}
+span.web {
+    background:url("../img/world.png") no-repeat left;
+}
+span.msn {
+    background:url("../img/status_online.png") no-repeat left;
+}
+span.resume {
+    background:url("../img/report_user.png") no-repeat left;
+}
+span.bday {
+    background:url("../img/cake.png") no-repeat left;
+}
+
+blockquote{
+    color:#595959;
+    font-style:italic;
+    text-indent:0;
+}
+
+address,h2,h3{
+    color:#4da626;
+}
+
+article{
+    margin-top:20px
+}
+
+section{
+    margin-left:12%;
+}
+
+section h2 span{
+    border-bottom:8px solid #8cd959;
+    width:10%;
+    height:1em;
+    float:left;
+    margin:-11px 5px 0 -12%;
+    padding:0;
+    display:block;
+}
+
+abbr{
+    border-bottom:1px dotted;
+}
+
+#social ul{
+    margin-bottom:1.5em;
+}
+#social li{
+    display:block;
+    height:34px;
+    list-style-type:none;
+}
+
+#social li a{
+    display:block;
+    height:inherit;
+    padding-left:34px;
+    line-height:32px;
+}
+
+
+/*------------------------------------*\
+  DETAILS
+\*------------------------------------*/
+::-moz-selection{
+    background:#8cd959;
+    color:#ffffff;
+    text-shadow:none;
+}
+::selection{
+    background:#8cd959;
+    color:#ffffff;
+    text-shadow:none;
+} 
+a:link{
+    -webkit-tap-highlight-color:#8cd959;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  IMAGES
+\*------------------------------------*/
+#logo{
+    margin-bottom:1.5em;
+}
+
+.twitter {
+    background: url("../img/twitter-24x24.png") center left no-repeat;
+}
+.facebook {
+    background: url("../img/facebook-24x24.png") center left no-repeat;
+}
+.googleplus {
+    background: url("../img/google+-24x24.png") center left no-repeat;
+}
+.linkedin {
+    background: url("../img/linkedin-24x24.png") center left no-repeat;
+}
+.github {
+    background: url("../img/github-24x24.png") center left no-repeat;
+}
+.delicious {
+    background: url("../img/delicious-24x24.png") center left no-repeat;
+}
+.pinboard {
+    background: url("../img/pinboard-24x24.png") center left no-repeat;
+}
+.youtube {
+    background: url("../img/youtube-24x24.png") center left no-repeat;
+}
+.flickr {
+    background: url("../img/flickr-24x24.png") center left no-repeat;
+}
+.readernaut {
+    background: url("../img/readernaut-24x24.png") center left no-repeat;
+}
+.runkeeper {
+    background: url("../img/runkeeper-24x24.png") center left no-repeat;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  NARROW
+\*------------------------------------*/
+/*
+  CSS for tablets and narrower devices
+  */
+
+
+
+
+
+@media (min-width:721px) and (max-width:960px){}
+/*--- END NARROW ---*/
+
+
+
+
+
+/*------------------------------------*\
+  MOBILE
+\*------------------------------------*/
+/*
+  CSS for mobile devices.
+  Linearise it!
+  */
+
+
+
+
+
+@media (max-width:720px){
+    body{
+	font-size:0.75em;
+    }
+    header h1{
+        margin-bottom:0.25em;
+    }
+    header blockquote{
+        margin-top:0px;
+    }
+}
+/*--- END MOBILE ---*/

@@ -1,1 +1,16 @@
-A creation by Toon Claes
+TEAM
+
+Toon Claes -- creator
+
+
+
+SITE
+
+inuit.css
+	Author: Harry Roberts
+	URL: inuitcss.com
+	Twitter: @inuitcss
+
+		
+
+humanstxt.org
