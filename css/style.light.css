@@ -43,6 +43,7 @@ header blockquote{
 }
 
 nav{
+    display:none; /* navigation here is overdone and I don't know how to make it look beautiful */
     margin-top:10px
 }
 
@@ -136,14 +137,20 @@ abbr{
     border-bottom:1px dotted;
 }
 
-section li{
-    height:50px;
+#social ul{
+    margin-bottom:1.5em;
+}
+#social li{
+    display:block;
+    height:34px;
     list-style-type:none;
-    padding-left:50px;
 }
 
-section li a{
-    margin: auto;
+#social li a{
+    display:block;
+    height:inherit;
+    padding-left:34px;
+    line-height:32px;
 }
 
 
@@ -177,25 +184,37 @@ a:link{
 }
 
 .twitter {
-    background: url("../img/twitter-48x48.png") no-repeat;
+    background: url("../img/twitter-24x24.png") center left no-repeat;
 }
 .facebook {
-    background: url("../img/facebook-48x48.png") no-repeat;
+    background: url("../img/facebook-24x24.png") center left no-repeat;
+}
+.googleplus {
+    background: url("../img/google+-24x24.png") center left no-repeat;
 }
 .linkedin {
-    background: url("../img/linkedin-48x48.png") no-repeat;
+    background: url("../img/linkedin-24x24.png") center left no-repeat;
+}
+.github {
+    background: url("../img/github-24x24.png") center left no-repeat;
 }
 .delicious {
-    background: url("../img/delicious-48x48.png") no-repeat;
+    background: url("../img/delicious-24x24.png") center left no-repeat;
+}
+.pinboard {
+    background: url("../img/pinboard-24x24.png") center left no-repeat;
 }
 .youtube {
-    background: url("../img/youtube-48x48.png") no-repeat;
+    background: url("../img/youtube-24x24.png") center left no-repeat;
 }
 .flickr {
-    background: url("../img/flickr-48x48.png") no-repeat;
+    background: url("../img/flickr-24x24.png") center left no-repeat;
 }
 .readernaut {
-    background: url("../img/readernaut-48x48.png") no-repeat;
+    background: url("../img/readernaut-24x24.png") center left no-repeat;
+}
+.runkeeper {
+    background: url("../img/runkeeper-24x24.png") center left no-repeat;
 }
 
 
