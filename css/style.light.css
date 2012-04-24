@@ -198,6 +198,9 @@ a:link{
 .github {
     background: url("../img/github-24x24.png") center left no-repeat;
 }
+.stackoverflow {
+    background: url("../img/stackoverflow-24x24.png") center left no-repeat;
+}
 .delicious {
     background: url("../img/delicious-24x24.png") center left no-repeat;
 }
