@@ -56,7 +56,7 @@ nav ul a{
     display:block;
     width:100%;
 }
-nav ul a:hover{
+nav ul a:hover, a i.icon-li{
     border:none;
     text-decoration:none;
 }
@@ -139,6 +139,7 @@ abbr{
 
 #social ul{
     margin-bottom:1.5em;
+    margin-left:0;
 }
 #social li{
     display:block;
@@ -149,7 +150,6 @@ abbr{
 #social li a{
     display:block;
     height:inherit;
-    padding-left:34px;
     line-height:32px;
 }
 
