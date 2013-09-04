@@ -83,28 +83,6 @@ address span {
     text-align:right;
 }
 
-span.address {
-    background:url("../img/house.png") no-repeat left;
-}
-span.mobile {
-    background:url("../img/phone.png") no-repeat left;
-}
-span.email {
-    background:url("../img/email.png") no-repeat left;
-}
-span.web {
-    background:url("../img/world.png") no-repeat left;
-}
-span.msn {
-    background:url("../img/status_online.png") no-repeat left;
-}
-span.resume {
-    background:url("../img/report_user.png") no-repeat left;
-}
-span.bday {
-    background:url("../img/cake.png") no-repeat left;
-}
-
 blockquote{
     color:#595959;
     font-style:italic;
@@ -181,43 +159,6 @@ a:link{
 \*------------------------------------*/
 #logo{
     margin-bottom:1.5em;
-}
-
-.twitter {
-    background: url("../img/twitter-24x24.png") center left no-repeat;
-}
-.facebook {
-    background: url("../img/facebook-24x24.png") center left no-repeat;
-}
-.googleplus {
-    background: url("../img/google+-24x24.png") center left no-repeat;
-}
-.linkedin {
-    background: url("../img/linkedin-24x24.png") center left no-repeat;
-}
-.github {
-    background: url("../img/github-24x24.png") center left no-repeat;
-}
-.stackoverflow {
-    background: url("../img/stackoverflow-24x24.png") center left no-repeat;
-}
-.delicious {
-    background: url("../img/delicious-24x24.png") center left no-repeat;
-}
-.pinboard {
-    background: url("../img/pinboard-24x24.png") center left no-repeat;
-}
-.youtube {
-    background: url("../img/youtube-24x24.png") center left no-repeat;
-}
-.flickr {
-    background: url("../img/flickr-24x24.png") center left no-repeat;
-}
-.readernaut {
-    background: url("../img/readernaut-24x24.png") center left no-repeat;
-}
-.runkeeper {
-    background: url("../img/runkeeper-24x24.png") center left no-repeat;
 }
 
 
