@@ -131,6 +131,10 @@ abbr{
     line-height:32px;
 }
 
+.disabled {
+    text-decoration: line-through;
+}
+
 
 /*------------------------------------*\
   DETAILS
